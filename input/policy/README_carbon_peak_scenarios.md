@@ -148,8 +148,43 @@ This scenario framework enables several innovative research directions:
    the required pace of technology deployment (renewables, CCS, hydrogen, DAC)
    in each scenario.
 
+## Observed Emission Data: Carbon Monitor
+
+The scenario caps can be validated against near-real-time observed data from
+Carbon Monitor (https://carbonmonitor.org/). A download script and reference
+data file are provided in `input/gcamdata/inst/extdata/emissions/`:
+
+```bash
+# Download latest Carbon Monitor data
+cd input/gcamdata/inst/extdata/emissions/
+python fetch_carbon_monitor.py
+
+# Or use the pre-included reference data
+# carbon_monitor_China_reference.csv
+```
+
+### Observed vs. Scenario Comparison (China Total CO2)
+
+| Year | Carbon Monitor (MtCO2) | In MtC | Early Peak Cap | Reference Cap | Delayed Cap |
+|------|------------------------|--------|---------------|---------------|-------------|
+| 2019 | ~10,882 | ~2,968 | — | — | — |
+| 2020 | ~10,663 | ~2,908 | — | — | — |
+| 2021 | ~11,356 | ~3,097 | — | — | — |
+| 2022 | ~10,947 | ~2,986 | — | — | — |
+| 2023 | ~11,313 | ~3,085 | — | — | — |
+| 2024 | ~11,116 | ~3,032 | — | — | — |
+| 2025 | TBD | TBD | **3,350** | 3,400 | 3,400 |
+| 2030 | TBD | TBD | 3,100 | **3,550** | 3,600 |
+| 2035 | TBD | TBD | 2,583 | 2,958 | **3,650** |
+
+**Unit conversion**: MtC = MtCO2 × 12/44 ≈ MtCO2 × 0.2727
+
+For a complete guide on model input requirements, see
+[README_model_inputs_guide.md](README_model_inputs_guide.md).
+
 ## References
 
 - China's NDC: Peak CO2 emissions before 2030, achieve carbon neutrality by 2060
+- Carbon Monitor: Liu et al. (2020). Nature Communications. https://doi.org/10.1038/s41467-020-18922-7
 - GCAM Documentation: http://jgcri.github.io/gcam-doc/
 - GCAM-China: https://umd-cgs.github.io/metarepo_gcam-china/
