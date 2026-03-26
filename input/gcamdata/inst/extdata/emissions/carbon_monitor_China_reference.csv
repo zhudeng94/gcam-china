@@ -1,0 +1,54 @@
+# File: carbon_monitor_China_reference.csv
+# Title: China annual CO2 emissions by sector - Carbon Monitor reference data
+# Units: MtCO2/yr
+# Source: https://carbonmonitor.org/ (Liu et al., 2020, Nature Communications)
+# Description: Reference values derived from Carbon Monitor near-real-time data.
+#   Used for validating GCAM-China emission scenarios against observed trends.
+#   Power = electricity and heat; Industry = industrial combustion;
+#   Ground Transport = road transport; Residential = buildings/heating;
+#   Domestic Aviation + International Aviation = civil aviation.
+# Column types: icn
+# ----------
+year,sector,MtCO2
+2019,Power,4884.7
+2019,Industry,3870.6
+2019,Ground Transport,1396.2
+2019,Residential,573.0
+2019,Domestic Aviation,107.3
+2019,International Aviation,50.6
+2019,Total,10882.4
+2020,Power,4894.1
+2020,Industry,3813.3
+2020,Ground Transport,1336.8
+2020,Residential,527.7
+2020,Domestic Aviation,73.7
+2020,International Aviation,17.5
+2020,Total,10663.1
+2021,Power,5340.1
+2021,Industry,3959.8
+2021,Ground Transport,1405.4
+2021,Residential,543.9
+2021,Domestic Aviation,89.2
+2021,International Aviation,17.8
+2021,Total,11356.2
+2022,Power,5259.9
+2022,Industry,3747.1
+2022,Ground Transport,1309.2
+2022,Residential,557.2
+2022,Domestic Aviation,60.3
+2022,International Aviation,13.4
+2022,Total,10947.1
+2023,Power,5451.3
+2023,Industry,3802.5
+2023,Ground Transport,1383.1
+2023,Residential,534.8
+2023,Domestic Aviation,108.5
+2023,International Aviation,33.1
+2023,Total,11313.3
+2024,Power,5397.2
+2024,Industry,3685.4
+2024,Ground Transport,1354.6
+2024,Residential,521.3
+2024,Domestic Aviation,115.8
+2024,International Aviation,41.2
+2024,Total,11115.5
