@@ -184,7 +184,7 @@ Rscript -e "install.packages('devtools')"
 Rscript -e "devtools::install_deps('.')"
 
 # Generate all XML files
-Rscript -e "devtools::load_all('.')" -e "driver(write_output=FALSE, write_xml=TRUE)"
+Rscript -e "devtools::load_all('.'); driver(write_output=FALSE, write_xml=TRUE)"
 
 # Or use the Makefile from the repository root
 cd ../..
@@ -215,13 +215,13 @@ This reads all CSV data from `inst/extdata/` and produces XML files in
 3. **Configure the scenario** (choose a configuration file):
    ```bash
    cd exe
-   # Reference scenario
+   # Reference scenario (no carbon cap policy)
    ./gcam.exe -C configuration_china.xml
 
-   # Carbon peak scenarios
-   ./gcam.exe -C configuration_china_peak_early.xml
-   ./gcam.exe -C configuration_china_peak_reference.xml
-   ./gcam.exe -C configuration_china_peak_delayed.xml
+   # Carbon peak scenarios (with CO2 emission cap constraints)
+   ./gcam.exe -C configuration_china_peak_early.xml      # Peak in 2025
+   ./gcam.exe -C configuration_china_peak_reference.xml   # Peak in 2030
+   ./gcam.exe -C configuration_china_peak_delayed.xml     # Peak in 2035
    ```
 
 ### Configuration File Structure

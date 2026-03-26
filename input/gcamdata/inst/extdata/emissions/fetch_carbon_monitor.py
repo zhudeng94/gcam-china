@@ -56,11 +56,6 @@ CARBON_MONITOR_URL = (
 # Conversion factor from MtCO2 to MtC (GCAM uses MtC internally)
 MTCO2_TO_MTC = 12.0 / 44.0  # ~0.2727
 
-# GCAM-China model time periods (5-year intervals)
-GCAM_MODEL_YEARS = [1975, 1990, 2005, 2010, 2015, 2020, 2025, 2030,
-                    2035, 2040, 2045, 2050, 2055, 2060, 2065, 2070,
-                    2075, 2080, 2085, 2090, 2095, 2100]
-
 # Sector mapping from Carbon Monitor to GCAM sectors
 SECTOR_MAPPING = {
     "Power": "electricity",

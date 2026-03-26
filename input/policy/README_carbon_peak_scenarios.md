@@ -15,6 +15,10 @@ All scenarios share the following assumptions:
 - **Net-zero target**: China achieves carbon neutrality by 2060
 - **Rest of world**: Global net-zero by 2060 (consistent with existing GCAM-China assumptions)
 - **Emission units**: MtC (megatons of carbon; multiply by 3.67 to convert to MtCO2)
+- **Net-zero convention**: The cap value of -2 MtC represents near-net-zero with
+  a small negative value to ensure the GCAM solver enforces carbon neutrality.
+  A value of exactly 0 can cause numerical instability; -2 MtC effectively
+  means net-zero with minimal negative emissions for solver stability.
 
 ### Scenario 1: Early Peak (2025) — `carbon_peak_early_2025_CN.xml`
 
